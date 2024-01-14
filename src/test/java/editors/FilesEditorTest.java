@@ -39,7 +39,7 @@ public class FilesEditorTest {
         FilesEditor.createIfNotExist(path);
         Assertions.assertTrue(FilesEditor.exist(root));
         Assertions.assertTrue(FilesEditor.exist(path));
-        FilesEditor.copyFull(copy, root);
+        FilesEditor.copyFullWithReplacement(copy, root);
         Assertions.assertTrue(FilesEditor.exist(result));
     }
 
